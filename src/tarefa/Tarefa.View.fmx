@@ -1,0 +1,210 @@
+object TarefaView: TTarefaView
+  Left = 0
+  Top = 0
+  Caption = 'TarefaView'
+  ClientHeight = 480
+  ClientWidth = 640
+  FormFactor.Width = 320
+  FormFactor.Height = 480
+  FormFactor.Devices = [Desktop]
+  OnCreate = FormCreate
+  DesignerMasterStyle = 0
+  object lytTarefaView: TLayout
+    Align = Client
+    Size.Width = 640.000000000000000000
+    Size.Height = 480.000000000000000000
+    Size.PlatformDefault = False
+    TabOrder = 0
+    object rctgTarefaView: TRectangle
+      Align = Client
+      ClipChildren = True
+      Fill.Color = claWhite
+      Size.Width = 640.000000000000000000
+      Size.Height = 480.000000000000000000
+      Size.PlatformDefault = False
+      Stroke.Kind = None
+      XRadius = 5.000000000000000000
+      YRadius = 5.000000000000000000
+      object lytTarefaViewClient: TLayout
+        Align = Client
+        Margins.Left = 3.000000000000000000
+        Margins.Right = 3.000000000000000000
+        Margins.Bottom = 3.000000000000000000
+        Size.Width = 634.000000000000000000
+        Size.Height = 477.000000000000000000
+        Size.PlatformDefault = False
+        TabOrder = 0
+        object lytTopoClient: TLayout
+          Align = Top
+          Size.Width = 634.000000000000000000
+          Size.Height = 145.000000000000000000
+          Size.PlatformDefault = False
+          TabOrder = 0
+          object lytTitulo: TLayout
+            Align = Top
+            Size.Width = 634.000000000000000000
+            Size.Height = 30.000000000000000000
+            Size.PlatformDefault = False
+            TabOrder = 0
+            object edtTitulo: TEdit
+              Touch.InteractiveGestures = [LongTap, DoubleTap]
+              Align = Client
+              StyleLookup = 'transparentedit'
+              TabOrder = 0
+              TextSettings.Font.Size = 13.000000000000000000
+              TextSettings.Font.StyleExt = {00070000000000000004000000}
+              Size.Width = 634.000000000000000000
+              Size.Height = 30.000000000000000000
+              Size.PlatformDefault = False
+              TextPrompt = 'Digite o T'#237'tulo'
+              StyledSettings = [Family, FontColor]
+              OnChange = edtTituloChange
+              object lnTitulo: TLine
+                Align = Bottom
+                LineType = Bottom
+                Position.Y = 29.000000000000000000
+                Size.Width = 634.000000000000000000
+                Size.Height = 1.000000000000000000
+                Size.PlatformDefault = False
+              end
+            end
+          end
+          object lytOpcoesPrincipais: TLayout
+            Align = Top
+            Margins.Top = 3.000000000000000000
+            Position.Y = 33.000000000000000000
+            Size.Width = 634.000000000000000000
+            Size.Height = 30.000000000000000000
+            Size.PlatformDefault = False
+            TabOrder = 1
+            object lytStatusTarefa: TLayout
+              Align = Left
+              Cursor = crHandPoint
+              HitTest = True
+              Size.Width = 150.000000000000000000
+              Size.Height = 30.000000000000000000
+              Size.PlatformDefault = False
+              TabOrder = 0
+              object lblStatusTarefa: TLabel
+                Align = Left
+                AutoSize = True
+                StyledSettings = [Family, Style, FontColor]
+                Margins.Left = 3.000000000000000000
+                Margins.Top = 3.000000000000000000
+                Margins.Bottom = 3.000000000000000000
+                Position.X = 3.000000000000000000
+                Position.Y = 3.000000000000000000
+                Size.Width = 70.000000000000000000
+                Size.Height = 24.000000000000000000
+                Size.PlatformDefault = False
+                TextSettings.Font.Size = 11.000000000000000000
+                TextSettings.WordWrap = False
+                Text = 'lblStatusTarefa'
+                TabOrder = 0
+                OnResize = lblStatusTarefaResize
+              end
+              object btnStatusTarefaDropDown: TSpeedButton
+                Align = Right
+                Margins.Top = 3.000000000000000000
+                Margins.Right = 3.000000000000000000
+                Margins.Bottom = 3.000000000000000000
+                Position.X = 138.500000000000000000
+                Position.Y = 1.500000000000000000
+                Scale.X = 0.500000000000000000
+                Scale.Y = 0.500000000000000000
+                Size.Width = 20.000000000000000000
+                Size.Height = 54.000000000000000000
+                Size.PlatformDefault = False
+                StyleLookup = 'arrowdowntoolbuttonbordered'
+                Text = 'btnStatusTarefaDropDown'
+              end
+            end
+            object lytCronograma: TLayout
+              Align = Left
+              Margins.Left = 1.000000000000000000
+              Position.X = 151.000000000000000000
+              Size.Width = 155.000000000000000000
+              Size.Height = 30.000000000000000000
+              Size.PlatformDefault = False
+              TabOrder = 1
+              object lblCronograma: TLabel
+                Align = Left
+                AutoSize = True
+                StyledSettings = [Family, Style, FontColor]
+                Size.Width = 73.000000000000000000
+                Size.Height = 30.000000000000000000
+                Size.PlatformDefault = False
+                TextSettings.Font.Size = 11.000000000000000000
+                TextSettings.WordWrap = False
+                Text = 'lblCronograma'
+                TabOrder = 0
+                OnResize = lblCronogramaResize
+              end
+            end
+            object lytEtapa: TLayout
+              Align = Left
+              Margins.Left = 1.000000000000000000
+              Position.X = 307.000000000000000000
+              Size.Width = 142.000000000000000000
+              Size.Height = 30.000000000000000000
+              Size.PlatformDefault = False
+              TabOrder = 2
+              object SpeedButton1: TSpeedButton
+                Align = Right
+                Margins.Top = 3.000000000000000000
+                Margins.Right = 3.000000000000000000
+                Margins.Bottom = 3.000000000000000000
+                Position.X = 130.500000000000000000
+                Position.Y = 1.500000000000000000
+                Scale.X = 0.500000000000000000
+                Scale.Y = 0.500000000000000000
+                Size.Width = 20.000000000000000000
+                Size.Height = 54.000000000000000000
+                Size.PlatformDefault = False
+                StyleLookup = 'arrowdowntoolbuttonbordered'
+                Text = 'btnStatusTarefaDropDown'
+              end
+              object lblEpataTarefa: TLabel
+                Align = Client
+                StyledSettings = [Family, Style, FontColor]
+                Margins.Left = 3.000000000000000000
+                Margins.Top = 3.000000000000000000
+                Margins.Bottom = 3.000000000000000000
+                Size.Width = 116.000000000000000000
+                Size.Height = 24.000000000000000000
+                Size.PlatformDefault = False
+                TextSettings.Font.Size = 11.000000000000000000
+                Text = 'lblEpataTarefa'
+                TabOrder = 0
+              end
+              object btnControleEtapa: TSpeedButton
+                Align = Left
+                Margins.Left = 3.000000000000000000
+                Margins.Top = 3.000000000000000000
+                Margins.Bottom = 3.000000000000000000
+                Position.X = 1.500000000000000000
+                Position.Y = 1.500000000000000000
+                Scale.X = 0.500000000000000000
+                Scale.Y = 0.500000000000000000
+                Size.Width = 20.000000000000000000
+                Size.Height = 54.000000000000000000
+                Size.PlatformDefault = False
+                StyleLookup = 'playtoolbutton'
+                Text = 'btnControleEtapa'
+              end
+            end
+          end
+        end
+        object rctgCorStatusTarefa: TRectangle
+          Align = Top
+          Fill.Color = claGray
+          Position.Y = 145.000000000000000000
+          Size.Width = 634.000000000000000000
+          Size.Height = 5.000000000000000000
+          Size.PlatformDefault = False
+          Stroke.Kind = None
+        end
+      end
+    end
+  end
+end
