@@ -40,8 +40,8 @@ begin
   with TTarefaView.Create(Self) do
   begin
     lytTarefaView.Align := TAlignLayout.None;
-    lytTarefaView.Width := 300;
-    lytTarefaView.Height := 500;
+    lytTarefaView.Width := 900;
+    lytTarefaView.Height := 700;
     Self.ShowModal(lytTarefaView);
   end;
 end;

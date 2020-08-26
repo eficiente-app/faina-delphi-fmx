@@ -5,6 +5,7 @@ object PrincipalView: TPrincipalView
   ClientHeight = 480
   ClientWidth = 640
   Position = ScreenCenter
+  WindowState = wsMaximized
   FormFactor.Width = 320
   FormFactor.Height = 480
   FormFactor.Devices = [Desktop]

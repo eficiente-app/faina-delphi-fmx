@@ -491,6 +491,11 @@
             <Form>FormularioBase</Form>
             <FormType>fmx</FormType>
         </DCCReference>
+        <DCCReference Include="src\ferramentas\cronograma\Faina.Cronograma.ExibicaoUnica.Frame.pas">
+            <Form>frameCronogramaExibicaoUnica</Form>
+            <FormType>fmx</FormType>
+            <DesignClass>TFrame</DesignClass>
+        </DCCReference>
         <BuildConfiguration Include="Release">
             <Key>Cfg_2</Key>
             <CfgParent>Base</CfgParent>
