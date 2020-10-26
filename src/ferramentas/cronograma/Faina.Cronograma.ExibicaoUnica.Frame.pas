@@ -19,6 +19,8 @@ type
     SVGIconImage1: TSVGIconImage;
     procedure lblInicioMouseEnter(Sender: TObject);
     procedure lblInicioMouseLeave(Sender: TObject);
+    procedure SVGIconImage1Paint(Sender: TObject; Canvas: TCanvas;
+      const ARect: TRectF);
   private
     { Private declarations }
   public
@@ -37,6 +39,16 @@ end;
 procedure TframeCronogramaExibicaoUnica.lblInicioMouseLeave(Sender: TObject);
 begin
   TLabel(Sender).TextSettings.FontColor := TAlphaColorRec.Black;
+end;
+
+procedure TframeCronogramaExibicaoUnica.SVGIconImage1Paint(Sender: TObject; Canvas: TCanvas; const ARect: TRectF);
+begin
+  SVGIconImage1.BeginUpdate;
+  try
+    TSVGIconFixedBitmapItem(SVGIconImage1.MultiResBitmap.Items[0]).DrawSVGIcon;
+  finally
+    SVGIconImage1.EndUpdate;
+  end;
 end;
 
 end.

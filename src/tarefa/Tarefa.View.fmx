@@ -1000,8 +1000,8 @@ object TarefaView: TTarefaView
             Size.Height = 298.000000000000000000
             Size.PlatformDefault = False
             TabOrder = 0
-            Viewport.Width = 630.000000000000000000
-            Viewport.Height = 294.000000000000000000
+            Viewport.Width = 634.000000000000000000
+            Viewport.Height = 298.000000000000000000
           end
         end
         object lytComentarios: TLayout

@@ -1,0 +1,39 @@
+object CalendarioDiaFrame: TCalendarioDiaFrame
+  Margins.Left = 1.000000000000000000
+  Margins.Top = 1.000000000000000000
+  Margins.Right = 1.000000000000000000
+  Margins.Bottom = 1.000000000000000000
+  Size.Width = 30.000000000000000000
+  Size.Height = 30.000000000000000000
+  Size.PlatformDefault = False
+  object lytCalendarioDia: TLayout
+    Align = Client
+    Size.Width = 30.000000000000000000
+    Size.Height = 30.000000000000000000
+    Size.PlatformDefault = False
+    TabOrder = 0
+    object crclCalendarioDia: TCircle
+      Align = Client
+      Fill.Color = claWhite
+      Size.Width = 30.000000000000000000
+      Size.Height = 30.000000000000000000
+      Size.PlatformDefault = False
+      Stroke.Kind = None
+      OnClick = crclCalendarioDiaClick
+      OnDblClick = crclCalendarioDiaDblClick
+      OnMouseEnter = crclCalendarioDiaMouseEnter
+      OnMouseLeave = crclCalendarioDiaMouseLeave
+      object lblDia: TLabel
+        Align = Client
+        StyledSettings = [Family, Size, Style]
+        Size.Width = 30.000000000000000000
+        Size.Height = 30.000000000000000000
+        Size.PlatformDefault = False
+        TextSettings.HorzAlign = Center
+        TextSettings.WordWrap = False
+        Text = '0'
+        TabOrder = 0
+      end
+    end
+  end
+end

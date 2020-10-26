@@ -14,7 +14,7 @@ uses
   FMX.Forms,
   FMX.Graphics,
   FMX.Dialogs,
-  Formulario.Base, FMX.Controls.Presentation, FMX.StdCtrls;
+  Formulario.Base, FMX.Controls.Presentation, FMX.StdCtrls, FMX.Calendar;
 
 type
   TPrincipalView = class(TFormularioBase)
@@ -31,19 +31,25 @@ var
 implementation
 
 uses
-  Tarefa.View;
+  Tarefa.View, Faina.Calendario.Mes.Frame;
 
 {$R *.fmx}
 
 procedure TPrincipalView.FormCreate(Sender: TObject);
 begin
-  with TTarefaView.Create(Self) do
-  begin
-    lytTarefaView.Align := TAlignLayout.None;
-    lytTarefaView.Width := 900;
-    lytTarefaView.Height := 700;
-    Self.ShowModal(lytTarefaView);
-  end;
+//  with TCalendarioMesFrame.Create(Self) do
+//  begin
+//    Parent := Self;
+//    Align := TAlignLayout.Center;
+//    MesDaData(Now)
+//  end;
+//  with TTarefaView.Create(Self) do
+//  begin
+//    lytTarefaView.Align := TAlignLayout.None;
+//    lytTarefaView.Width := 900;
+//    lytTarefaView.Height := 700;
+//    Self.ShowModal(lytTarefaView);
+//  end;
 end;
 
 end.

@@ -1,0 +1,57 @@
+object CalendarioMesFrame: TCalendarioMesFrame
+  Size.Width = 848.000000000000000000
+  Size.Height = 454.000000000000000000
+  Size.PlatformDefault = False
+  OnResize = FrameResize
+  object lytCalendarioMes: TLayout
+    Align = Client
+    Size.Width = 848.000000000000000000
+    Size.Height = 454.000000000000000000
+    Size.PlatformDefault = False
+    TabOrder = 0
+    object rctgCalendarioMes: TRectangle
+      Align = Client
+      Fill.Color = claWhite
+      Size.Width = 848.000000000000000000
+      Size.Height = 454.000000000000000000
+      Size.PlatformDefault = False
+      Stroke.Kind = None
+      object lytNavegacaoTopo: TLayout
+        Align = Top
+        Size.Width = 848.000000000000000000
+        Size.Height = 30.000000000000000000
+        Size.PlatformDefault = False
+        TabOrder = 0
+      end
+      object lytDiasMes: TLayout
+        Align = Client
+        Size.Width = 848.000000000000000000
+        Size.Height = 424.000000000000000000
+        Size.PlatformDefault = False
+        TabOrder = 1
+        object glytDias: TGridLayout
+          Align = Client
+          ItemHeight = 64.000000000000000000
+          ItemWidth = 100.000000000000000000
+          Orientation = Horizontal
+          Size.Width = 848.000000000000000000
+          Size.Height = 392.000000000000000000
+          Size.PlatformDefault = False
+          TabOrder = 0
+          OnResize = glytDiasResize
+        end
+        object glytTituloDias: TGridLayout
+          Align = Top
+          ItemHeight = 32.000000000000000000
+          ItemWidth = 64.000000000000000000
+          Orientation = Horizontal
+          Size.Width = 848.000000000000000000
+          Size.Height = 32.000000000000000000
+          Size.PlatformDefault = False
+          TabOrder = 1
+          OnResize = glytDiasResize
+        end
+      end
+    end
+  end
+end
